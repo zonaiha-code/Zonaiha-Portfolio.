@@ -9,6 +9,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+/* MEDIA SETTINGS
+   Your videos and images do not have to live in this repo.
+   1. Host the "assets" folder (from zunaira-media.zip) on a free static host.
+   2. Paste that site's address below, inside the quotes.
+   Example: window.MEDIA_BASE = "https://zunaira-media.pages.dev/";
+   Leave it empty ("") only if the assets folder sits next to this file. */
+window.MEDIA_BASE = "";
+</script>
 <style>
 :root{
   --navy:#0A1628;
@@ -189,6 +198,7 @@ footer p{margin:0 0 6px;max-width:80ch}
   </header>
 </div>
 
+<noscript><p style="padding:20px;text-align:center">Turn on JavaScript to see the reels and images.</p></noscript>
 <main id="top">
 
 <!-- HERO -->
@@ -198,7 +208,7 @@ footer p{margin:0 0 6px;max-width:80ch}
       <h1>Product photo in. Reel and poster out.</h1>
       <p class="lede">I'm Zunaira, a social media manager. I make AI-generated product reels and campaign posters, and I run an Instagram page that reached 9.59 million views in 90 days.</p>
       <div class="cta">
-        <a class="btn" href="https://www.instagram.com/cute.tiny.talks/" target="_blank" rel="noopener">Message me on Instagram</a>
+        <a class="btn" href="https://wa.me/923242176221?text=Hi%20Zunaira%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">Message me on WhatsApp</a>
         <a class="textlink" href="#reels">See the reels</a>
       </div>
     </div>
@@ -206,7 +216,7 @@ footer p{margin:0 0 6px;max-width:80ch}
     <div class="wall">
       <figure class="reel-wrap">
         <div class="reel" data-mode="loop">
-          <video src="assets/videos/coca-cola.mp4" poster="assets/posters/coca-cola.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Coca-Cola bottle reel"></video>
+          <video data-src="assets/videos/coca-cola.mp4" data-poster="assets/posters/coca-cola.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Coca-Cola bottle reel"></video>
           <button class="sound" type="button" aria-pressed="false" aria-label="Sound for Coca-Cola reel">
             <svg class="off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m16 9 5 6M21 9l-5 6"/></svg>
             <svg class="on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
@@ -216,7 +226,7 @@ footer p{margin:0 0 6px;max-width:80ch}
       </figure>
       <figure class="reel-wrap">
         <div class="reel" data-mode="loop">
-          <video src="assets/videos/black-cobra-watch.mp4" poster="assets/posters/black-cobra-watch.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Black Cobra watch reel"></video>
+          <video data-src="assets/videos/black-cobra-watch.mp4" data-poster="assets/posters/black-cobra-watch.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Black Cobra watch reel"></video>
           <button class="sound" type="button" aria-pressed="false" aria-label="Sound for Black Cobra watch reel">
             <svg class="off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m16 9 5 6M21 9l-5 6"/></svg>
             <svg class="on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
@@ -226,7 +236,7 @@ footer p{margin:0 0 6px;max-width:80ch}
       </figure>
       <figure class="reel-wrap">
         <div class="reel" data-mode="loop">
-          <video src="assets/videos/phone-exploded-view.mp4" poster="assets/posters/phone-exploded-view.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Phone exploded-view reel"></video>
+          <video data-src="assets/videos/phone-exploded-view.mp4" data-poster="assets/posters/phone-exploded-view.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Phone exploded-view reel"></video>
           <button class="sound" type="button" aria-pressed="false" aria-label="Sound for phone exploded-view reel">
             <svg class="off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m16 9 5 6M21 9l-5 6"/></svg>
             <svg class="on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
@@ -253,15 +263,15 @@ footer p{margin:0 0 6px;max-width:80ch}
     </div>
     <div class="shots">
       <figure>
-        <img src="assets/img/insights-views.jpg" width="704" height="1568" loading="lazy" alt="Instagram Insights screenshot showing 9,587,105 views over 90 days, 98.6 percent from non-followers">
+        <img data-src="assets/img/insights-views.jpg" width="704" height="1568" loading="lazy" alt="Instagram Insights screenshot showing 9,587,105 views over 90 days, 98.6 percent from non-followers">
         <figcaption>Views, last 90 days</figcaption>
       </figure>
       <figure>
-        <img src="assets/img/insights-followers.jpg" width="704" height="1568" loading="lazy" alt="Instagram Insights screenshot showing 6,988 followers, up 10.6 percent in 30 days">
+        <img data-src="assets/img/insights-followers.jpg" width="704" height="1568" loading="lazy" alt="Instagram Insights screenshot showing 6,988 followers, up 10.6 percent in 30 days">
         <figcaption>Follower growth, last 30 days</figcaption>
       </figure>
       <figure>
-        <img src="assets/img/insights-profile.jpg" width="704" height="1568" loading="lazy" alt="Instagram profile of cute.tiny.talks showing 96 posts and 6,988 followers">
+        <img data-src="assets/img/insights-profile.jpg" width="704" height="1568" loading="lazy" alt="Instagram profile of cute.tiny.talks showing 96 posts and 6,988 followers">
         <figcaption>The profile</figcaption>
       </figure>
     </div>
@@ -278,56 +288,56 @@ footer p{margin:0 0 6px;max-width:80ch}
     <div class="reels">
       <figure class="reel-wrap">
         <div class="reel" data-mode="tap">
-          <video src="assets/videos/golden-pearl-lotion.mp4" poster="assets/posters/golden-pearl-lotion.jpg" loop playsinline preload="none" aria-label="Golden Pearl body lotion reel"></video>
+          <video data-src="assets/videos/golden-pearl-lotion.mp4" data-poster="assets/posters/golden-pearl-lotion.jpg" loop playsinline preload="none" aria-label="Golden Pearl body lotion reel"></video>
           <button class="tap" type="button" aria-label="Play Golden Pearl body lotion reel"><span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16l14-8L6 4Z"/></svg></span></button>
         </div>
         <figcaption>Golden Pearl body lotion</figcaption>
       </figure>
       <figure class="reel-wrap">
         <div class="reel" data-mode="tap">
-          <video src="assets/videos/aloe-vera-lotion.mp4" poster="assets/posters/aloe-vera-lotion.jpg" loop playsinline preload="none" aria-label="Aloe vera lotion reel"></video>
+          <video data-src="assets/videos/aloe-vera-lotion.mp4" data-poster="assets/posters/aloe-vera-lotion.jpg" loop playsinline preload="none" aria-label="Aloe vera lotion reel"></video>
           <button class="tap" type="button" aria-label="Play aloe vera lotion reel"><span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16l14-8L6 4Z"/></svg></span></button>
         </div>
         <figcaption>Aloe vera lotion</figcaption>
       </figure>
       <figure class="reel-wrap">
         <div class="reel" data-mode="tap">
-          <video src="assets/videos/redmi-phone.mp4" poster="assets/posters/redmi-phone.jpg" loop playsinline preload="none" aria-label="Redmi phone reel"></video>
+          <video data-src="assets/videos/redmi-phone.mp4" data-poster="assets/posters/redmi-phone.jpg" loop playsinline preload="none" aria-label="Redmi phone reel"></video>
           <button class="tap" type="button" aria-label="Play Redmi phone reel"><span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16l14-8L6 4Z"/></svg></span></button>
         </div>
         <figcaption>Redmi phone</figcaption>
       </figure>
       <figure class="reel-wrap">
         <div class="reel" data-mode="tap">
-          <video src="assets/videos/earbuds-splash.mp4" poster="assets/posters/earbuds-splash.jpg" loop playsinline preload="none" aria-label="Earbuds splash reel"></video>
+          <video data-src="assets/videos/earbuds-splash.mp4" data-poster="assets/posters/earbuds-splash.jpg" loop playsinline preload="none" aria-label="Earbuds splash reel"></video>
           <button class="tap" type="button" aria-label="Play earbuds splash reel"><span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16l14-8L6 4Z"/></svg></span></button>
         </div>
         <figcaption>Earbuds, splash freeze</figcaption>
       </figure>
       <figure class="reel-wrap">
         <div class="reel" data-mode="tap">
-          <video src="assets/videos/protein-shake.mp4" poster="assets/posters/protein-shake.jpg" loop playsinline preload="none" aria-label="Protein shake reel"></video>
+          <video data-src="assets/videos/protein-shake.mp4" data-poster="assets/posters/protein-shake.jpg" loop playsinline preload="none" aria-label="Protein shake reel"></video>
           <button class="tap" type="button" aria-label="Play protein shake reel"><span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16l14-8L6 4Z"/></svg></span></button>
         </div>
         <figcaption>Protein shake</figcaption>
       </figure>
       <figure class="reel-wrap">
         <div class="reel" data-mode="tap">
-          <video src="assets/videos/laptop-silk.mp4" poster="assets/posters/laptop-silk.jpg" loop playsinline preload="none" aria-label="Laptop on silk reel"></video>
+          <video data-src="assets/videos/laptop-silk.mp4" data-poster="assets/posters/laptop-silk.jpg" loop playsinline preload="none" aria-label="Laptop on silk reel"></video>
           <button class="tap" type="button" aria-label="Play laptop on silk reel"><span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16l14-8L6 4Z"/></svg></span></button>
         </div>
         <figcaption>Laptop on silk</figcaption>
       </figure>
       <figure class="reel-wrap">
         <div class="reel" data-mode="tap">
-          <video src="assets/videos/lawn-fabric.mp4" poster="assets/posters/lawn-fabric.jpg" loop playsinline preload="none" aria-label="Embroidered fabric reel"></video>
+          <video data-src="assets/videos/lawn-fabric.mp4" data-poster="assets/posters/lawn-fabric.jpg" loop playsinline preload="none" aria-label="Embroidered fabric reel"></video>
           <button class="tap" type="button" aria-label="Play embroidered fabric reel"><span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16l14-8L6 4Z"/></svg></span></button>
         </div>
         <figcaption>Embroidered fabric</figcaption>
       </figure>
       <div class="reel-cta">
         <h3>Want one for your product?</h3>
-        <a class="btn" href="https://www.instagram.com/cute.tiny.talks/" target="_blank" rel="noopener">Send me a message</a>
+        <a class="btn" href="https://wa.me/923242176221?text=Hi%20Zunaira%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">Send me a message</a>
       </div>
     </div>
   </div>
@@ -342,15 +352,15 @@ footer p{margin:0 0 6px;max-width:80ch}
     </div>
     <div class="posters">
       <figure>
-        <img class="poster" src="assets/img/poster-shoes.jpg" width="900" height="1350" loading="lazy" alt="Poster for a grey running shoe with the headline Move Ahead">
-        <figcaption><img class="thumb" src="assets/img/source-shoes.jpg" width="225" height="225" alt="Original product photo of the grey running shoe"><span>Running shoe poster, made from the small photo on the left</span></figcaption>
+        <img class="poster" data-src="assets/img/poster-shoes.jpg" width="900" height="1350" loading="lazy" alt="Poster for a grey running shoe with the headline Move Ahead">
+        <figcaption><img class="thumb" data-src="assets/img/source-shoes.jpg" width="225" height="225" alt="Original product photo of the grey running shoe"><span>Running shoe poster, made from the small photo on the left</span></figcaption>
       </figure>
       <figure>
-        <img class="poster" src="assets/img/poster-earbuds.jpg" width="900" height="1274" loading="lazy" alt="Poster for green wireless earbuds with the headline No Limits">
-        <figcaption><img class="thumb" src="assets/img/source-earbuds.jpg" width="447" height="447" alt="Original product photo of the green earbuds"><span>Earbuds poster, made from the small photo on the left</span></figcaption>
+        <img class="poster" data-src="assets/img/poster-earbuds.jpg" width="900" height="1274" loading="lazy" alt="Poster for green wireless earbuds with the headline No Limits">
+        <figcaption><img class="thumb" data-src="assets/img/source-earbuds.jpg" width="447" height="447" alt="Original product photo of the green earbuds"><span>Earbuds poster, made from the small photo on the left</span></figcaption>
       </figure>
       <figure>
-        <img class="poster" src="assets/img/poster-store.jpg" width="900" height="1200" loading="lazy" alt="Online store poster with a shopping cart and the headline Your World. One Click Away.">
+        <img class="poster" data-src="assets/img/poster-store.jpg" width="900" height="1200" loading="lazy" alt="Online store poster with a shopping cart and the headline Your World. One Click Away.">
         <figcaption><span>Online store campaign poster</span></figcaption>
       </figure>
     </div>
@@ -366,16 +376,16 @@ footer p{margin:0 0 6px;max-width:80ch}
     </div>
     <div class="boards">
       <figure>
-        <img src="assets/img/coca-cola-shot-list.jpg" width="1400" height="933" loading="lazy" alt="Ten-shot breakdown of a Coca-Cola bottle commercial, from hero intro to final hero">
+        <img data-src="assets/img/coca-cola-shot-list.jpg" width="1400" height="933" loading="lazy" alt="Ten-shot breakdown of a Coca-Cola bottle commercial, from hero intro to final hero">
         <figcaption>Ten-shot breakdown for a Coca-Cola concept</figcaption>
       </figure>
       <div class="stack">
         <figure>
-          <img src="assets/img/serum-storyboard.jpg" width="1200" height="655" loading="lazy" alt="Four-frame storyboard for a Multi Acid Peeling Solution serum ad with pomegranate and grapes">
+          <img data-src="assets/img/serum-storyboard.jpg" width="1200" height="655" loading="lazy" alt="Four-frame storyboard for a Multi Acid Peeling Solution serum ad with pomegranate and grapes">
           <figcaption>Four-frame storyboard for a serum ad</figcaption>
         </figure>
         <figure>
-          <img src="assets/img/redmi-hero-still.jpg" width="1100" height="880" loading="lazy" alt="Redmi phone standing on black marble with gold lighting">
+          <img data-src="assets/img/redmi-hero-still.jpg" width="1100" height="880" loading="lazy" alt="Redmi phone standing on black marble with gold lighting">
           <figcaption>Hero still for a Redmi phone</figcaption>
         </figure>
       </div>
@@ -422,13 +432,13 @@ footer p{margin:0 0 6px;max-width:80ch}
 <section id="contact" class="contact">
   <div class="wrap">
     <h2>Have a product to promote?</h2>
-    <p class="intro">Message me on Instagram and tell me what you sell.</p>
+    <p class="intro">Message me on WhatsApp, email or Instagram and tell me what you sell.</p>
     <div class="cta">
-      <a class="btn" href="https://www.instagram.com/cute.tiny.talks/" target="_blank" rel="noopener">Message @cute.tiny.talks</a>
-      <!-- To add more ways to reach you, paste a link here, for example:
-      <a class="textlink" href="https://wa.me/92XXXXXXXXXX">WhatsApp</a>
-      <a class="textlink" href="mailto:you@example.com">Email</a> -->
+      <a class="btn" href="https://wa.me/923242176221?text=Hi%20Zunaira%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">Message me on WhatsApp</a>
+      <a class="textlink" href="mailto:zonii4541@gmail.com">zonii4541@gmail.com</a>
+      <a class="textlink" href="https://www.instagram.com/cute.tiny.talks/" target="_blank" rel="noopener">Instagram @cute.tiny.talks</a>
     </div>
+    <p class="intro">WhatsApp: +92 324 2176221</p>
   </div>
 </section>
 
@@ -443,6 +453,11 @@ footer p{margin:0 0 6px;max-width:80ch}
 
 <script>
 (function(){
+  var BASE = window.MEDIA_BASE || "";
+  if (BASE && BASE.slice(-1) !== "/") BASE += "/";
+  Array.prototype.forEach.call(document.querySelectorAll("[data-src]"), function(el){ el.src = BASE + el.getAttribute("data-src"); });
+  Array.prototype.forEach.call(document.querySelectorAll("[data-poster]"), function(el){ el.poster = BASE + el.getAttribute("data-poster"); });
+
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var reels = Array.prototype.slice.call(document.querySelectorAll('.reel'));
 
